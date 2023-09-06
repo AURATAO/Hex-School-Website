@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    position: relative;
+}
+.sharelink{
+    display: flex;
+    justify-content: right;
+    background: whitesmoke;
+    padding: 5px;
+}
+
+.header{
+    display: flex;
+}
+
+.header ul{
+    display: flex;
+    margin: auto;
+    
+}
+
+.header a{
+    padding-right: 5px;
+    padding-bottom: 12px;
+    color: black;
+}
+
+.header a:hover{
+    border-bottom: 3px solid green;
+}
+
+.banner img{
+    max-height: 100%;  
+    max-width: 100%; 
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.banner h1{
+    background-color: white;
+    opacity:50%;
+    color: black;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 50px ;
+    padding: 30px;
+}
+
+.product{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product_html, .product_design, .product_jQuery{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0px 2px 3px lightgray ;
+}
+
+.product_html, .product_design, .product_jQuery img{
+    justify-content: center;
+    margin: auto;
+
+}
+
+h3{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table {
+    margin: 10px auto;
+    padding: 20px;
+}
+
+th{
+    background-color: #f7f7f7;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+    text-align: left;
+
+
+}
+td{
+    padding: 2VH;
+    border-bottom: 1px solid lightgray ;
+}
+
+.contact{
+    background: linear-gradient( white, #00684e);
+    height: 200px;
+    padding-bottom: 30px;
+}
+
+.contact h3{
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.contact_input{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.contact_input ul{
+    flex-direction: column;
+}
+
+.contact_input textarea{
+    margin: 10px;
+}
+
+.contact_input label{
+    font-size: 12px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+}
