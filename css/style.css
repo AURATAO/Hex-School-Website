@@ -1,0 +1,334 @@
+@import url("./reset.css");
+
+/* html標籤盡量不要重疊，可以開著outline輔助切版  */
+/* * {
+  outline: 1px solid yellowgreen;
+} */
+
+/* max-width: 1100px;  */
+/* 要設一個最大寬，不然螢幕太寬會被拉太寬變形 */
+
+/* ---- wrap ---- */
+.wrap {
+  width: 100%;
+  /* position: relative; */
+  /* 不用設定定位，定位通常是用在脫離由上到下、左到右排序的情況下 */
+}
+
+/* ---- header ---- */
+.header {
+  width: 100%;
+}
+
+/* social media */
+.header div:first-child {
+  background: whitesmoke;
+  width: 100%;
+}
+
+.sharelink {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%; /* 父層是100%時，子層也要設定才會撐滿螢幕 */
+  height: 32px;
+  display: flex; /* 是 ul 要 flex，li 才會排隊站好 */
+  justify-content: right;
+  align-items: center;
+  background: whitesmoke;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.sharelink li:first-child {
+  position: relative;
+}
+
+.sharelink li:first-child:after {
+  position: absolute;
+  content: "";
+  background-color: #ccc;
+  width: 1px;
+  height: 20px;
+  top: 5px;
+  right: 0;
+}
+
+.sharelink li a {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+
+.sharelink li:first-child a {
+  color: #4267b2;
+}
+
+.sharelink li:last-child a {
+  color: #1da1f2;
+}
+
+.sharelink a:hover {
+  text-decoration: underline;
+}
+
+.sharelink a img {
+  padding-right: 5px;
+  width: 20px;
+}
+
+/* navbar */
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+nav h1 {
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  height: 100%;
+  padding: 0 10px;
+}
+
+nav ul li {
+  height: 100%;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  min-width: 65px;
+}
+
+nav ul li:hover,
+nav ul li:active,
+nav ul li:focus {
+  border-bottom: 3px solid #0c9;
+}
+
+nav ul li a {
+  display: block;
+  color: #0c9;
+  line-height: 66px;
+  box-sizing: border-box;
+}
+
+/* banner */
+.banner {
+  background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.banner div {
+  width: 100%;
+  height: 190px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner div h1 {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: white;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 50px;
+}
+
+/* product */
+.product {
+  margin: 10px auto;
+  max-width: 1100px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+  min-width: 500px;
+}
+
+.product > div {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  font-size: 16px;
+}
+
+.product > div h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product > div p {
+  text-align: left;
+  line-height: 1.4;
+}
+
+.product_jQuery ul {
+  padding: 10px 0px 10px 80px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.product_jQuery ul li {
+  line-height: 1.5;
+  list-style: disc;
+}
+
+/* 課程表格 */
+section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 60px 100px 60px;
+  box-sizing: border-box;
+}
+
+section h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 30px 20px;
+}
+
+section table {
+  width: 100%;
+  max-width: 920px;
+  margin: 0px auto;
+}
+
+section th {
+  background-color: #f7f7f7;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+section td {
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.green__color {
+  color: #0c9;
+}
+
+/* 聯絡資訊 */
+.contact {
+  background: linear-gradient(#00654b, #009871);
+  padding: 36px;
+}
+
+.contact h3 {
+  padding: 10px;
+  line-height: 1.3;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+}
+
+.contact .contact_input {
+  padding: 20px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact .contact_input textarea {
+  width: 50%;
+  height: 200px;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+}
+
+.list {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.list li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list label {
+  font-size: 12px;
+}
+
+.list li input {
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  line-height: 2;
+}
+
+.list li button {
+  margin-left: auto;
+  width: 100px;
+  line-height: 2;
+  border-radius: 3px;
+  border: 2px solid #0c9;
+  background: #0c9;
+  color: white;
+}
+
+.list li button:hover,
+.list li button:active {
+  border: 2px solid black;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background: white;
+  height: 60px;
+}
+
+footer > div {
+  max-width: 1100px;
+  display: flex;
+  padding: 20px 10px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer ul li a {
+  color: rgb(255, 73, 122);
+}
+
+footer ul li a:hover {
+  color: rgba(255, 73, 122, 0.7);
+}
