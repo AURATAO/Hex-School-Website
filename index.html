@@ -8,52 +8,69 @@
 </head>
 <body>
     <div class="wrap">
-        <div class="sharelink">
-            <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/facebookIcon.png" alt="fb logo">
-            <p>粉絲團</p>
-            <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/twitterIcon.png" alt="twitter logo">
-            <p>追蹤我們</p>
+        <ul class="sharelink">
+            <li>
+                <a href="#">
+                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/facebookIcon.png" alt="fb logo">
+                    粉絲團
+                </a>
+            </li>
+            <li>
+                <a class="twitter" href="#">
+                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/twitterIcon.png" alt="fb logo">
+                    追蹤我們
+                </a>
+            </li>
         </div>
-        <div class="header">
-            <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png" alt="logo">
+
+        <!-- 首頁 -->
+        <header class="header">
+            <h1>
+                <a href="#">Hex School</a>
+            </h1>
             <ul>
                 <li><a href="#">首頁</a></li>
                 <li><a href="#">產品介紹</a></li>
                 <li><a href="#">聯絡我們</a></li>
             </ul>
         </div>
+        </header>
+
+        <!-- banner -->
         <div class="banner">
-            <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png" alt="banner">
             <h1>六角學院<br>
                 讓您奠定良好的前端基礎
             </h1>
         </div>
+
+         <!-- 課程介紹 -->
+
         <div class="product">
             <div class="product_html">
                 <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="htmlCourse">
                 <h3>HTML 基礎教學</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio a itaque quam eum veritatis illo delectus. 
-                    Iste provident quas placeat voluptates labore. Cupiditate facere, maxime a eligendi cum voluptatibus.
+                    主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
                 </p>
             </div>
             <div class="product_design">
                     <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="htmlCourse">
                     <h3>響應式網站設計</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio a itaque quam eum veritatis illo delectus. 
-                        Iste provident quas placeat voluptates labore. Cupiditate facere, maxime a eligendi cum voluptatibus.
+                        響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
                     </p>
             </div>
-                    
             <div class="product_jQuery">
-                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png
-                        " alt="htmlCourse">
-                        <h3>jQuery 實戰教學</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio a itaque quam eum veritatis illo delectus. 
-                            Iste provident quas placeat voluptates labore. Cupiditate facere, maxime a eligendi cum voluptatibus.
-                        </p>
+                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png
+                    " alt="htmlCourse">
+                    <h3>jQuery 實戰教學</h3>
+                    <h5>本課程有以下特色</h5>
+                    <ul class="jQuery-feature">
+                        <li>瞭解變數的使用方法</li>
+                        <li>學習並操作DOM</li>
+                        <li>學習基本數學運算方法</li>
+                        <li>瞭套件的操作及運用</li>
+                    </ul>
             </div>
         </div>
             <h3>線上及實體課程的差異</h3>
@@ -107,7 +124,7 @@
                     歡迎留下您的資料
                 </h3>
                 <div class="contact_input">  
-                    <textarea type="text" rows="10" cols="25"></textarea>
+                    <textarea type="text" rows="15" cols="30"></textarea>
                     <ul class="list">
                         <li>
                             <label for="姓名">姓名</label> <br>
@@ -124,13 +141,13 @@
                     
                 </div>
             </div>
-            <div class="footer">
+            <footer class="footer">
                 <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png" alt="logo">
                 <ul>
                     <li>聯絡我們: <a href="#">hexxschool@gmail.com</a></li>
                     <li>電話: <a href="#">099123456</a></li>
                 </ul>
-            </div>
+            </footer>
     </div>
 </body>
 </html>
