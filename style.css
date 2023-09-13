@@ -1,86 +1,89 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import url('./reset.css');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/**{outline: 1px solid yellowgreen;}*/
+
+
 
 .wrap{
-    position: relative;
+    width: 100%;
 }
+
+/* ---- header ---- */
+
+.header1{
+    background: whitesmoke;
+    width: 100%;
+}
+
+/* social media */
+
+
 .sharelink{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    height:32px;
     display: flex;
+    align-items: center;
     justify-content: right;
     background: whitesmoke;
     padding: 10px;
+    box-sizing: border-box; /*!*/
 }
 
+.sharelink li:first-child {
+    position: relative;
+  }
+
+  .sharelink li:first-child:after {
+    position: absolute; /* */
+    content: ""; /* */
+    background-color: whitesmoke;
+    width: 1px;
+    height: 20px;
+    top: 5px;
+    right: 0;
+  }
 
 .sharelink li a{
     display: flex;
     align-items: center;
-    padding: 1px;
+    padding: 5px;
 }
 
-.twitter{
+.sharelink li:first-child a {
+    color: #4267b2;
+  }
+
+  .sharelink a:hover {
+    text-decoration: underline;
+  }
+  
+  .sharelink a img {
+    padding-right: 5px;
+    width: 20px;
+  }
+
+  .twitter{
     border-left: 1px solid rgb(93, 91, 91);
     padding-left: 2px;
 }
-
-
 
 .sharelink img{
     width: 20px;
 }
 
-
 .header{
+    width: 100%;
+    max-width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 12px;
+    margin: 0 auto;
+    display: flex;
+    height: 76px;
+    box-sizing: border-box;
+
 }
 
 .header h1{
@@ -138,26 +141,30 @@ table {
     line-height: 1.3;
     text-align: left;
     font-size: 50px;
-}
+}   
 
 .product{
     display: flex;
-    margin: auto;
+    margin: 10px auto;
+    max-width: 1100px;
+    gap:30px;
     justify-content: center;
     padding: 20px;
-    width: 500;
+    min-width: 500;
 }
 
 .product_html, .product_design, .product_jQuery{
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0px 2px 3px lightgray;
+    padding: 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
     text-align: center;
     width: 100%;
+    border-radius: 5px;
  
 }
 
 h3{
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
@@ -167,19 +174,22 @@ h3{
 }
 
 .jQuery-feature{
-    padding-left: 150px;
-    list-style: disc;
-    align-items: center;
+    padding-left: 10px 0px 10px 80px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 h5{
     padding-bottom: 5px;
     padding-right: 35px;
+    text-align: left;
 }
 
 .jQuery-feature li{
-    line-height: 1.4;
-    text-align: left;
+    line-height: 1.5;
+    list-style:disc inside none;
 }
 
 h3{
@@ -188,31 +198,43 @@ h3{
     padding-bottom: 5px;
 }
 
+section{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding:30px 60px 100px 60px;
+    box-sizing: border-box;
 
-
-table {
-    margin: 10px auto;
-    padding: 20px;
 }
 
+section table {
+    width: 100%;
+    max-width: 920px;
+    margin: 0px auto;
+
+}
+
+section h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+
+}
 th{
     background-color: #f7f7f7;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
-    padding: 5px;
+    padding: 10px 20px;
     text-align: left;
-
-
 }
 td{
-    padding: 2VH;
+    padding: 10px 20px;
     border-bottom: 1px solid lightgray ;
 }
 
 .contact{
     background: linear-gradient( #009871, #00654b);
-    height: 300px;
-    padding-bottom: 30px;
+    padding: 36px;
 }
 
 .contact h3{
@@ -223,27 +245,127 @@ td{
     font-size: 36px;
 }
 
-.contact_input{
+.contact .contact_input{
+    padding: 20px 30px;
+    min-width: 900px;
+    margin: auto;
     display: flex;
     justify-content:center;
+    gap: 30px;
 }
+
+.contact .contact_input textarea {
+    width: 50%;
+    height: 200px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+  }
+
+  /*.list {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.list li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list label {
+  font-size: 12px;
+}
+
+.list li input {
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  line-height: 2;
+}
+
+.list li button {
+  margin-left: auto;
+  width: 100px;
+  line-height: 2;
+  border-radius: 3px;
+  border: 2px solid #0c9;
+  background: #0c9;
+  color: white;
+}
+
+.list li button:hover,
+.list li button:active {
+  border: 2px solid black;
+}
+*/
 
 .list{
-    border-left: 20px;
-
+    width:50%;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
 }
 
-.contact_input textarea{
-    border-bottom: 30px;
+.list li{
+    display: flex;
+    flex-direction: column;
+    gap:5px
 }
 
-.contact_input label{
-    font-size: 12px;
+.list label {
+    font-size: 15px;
 }
 
-.footer{
+.list li input{
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.list li button{
+    margin-left: auto;
+    width: 100%;
+    line-height: 2px;
+    border-radius: 3px;
+    border: 2px solid #0c9;
+    background: #0c9;
+    color: white;
+}
+
+.list li button:hover,
+.list li button:active {
+  border: 2px solid black;
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: #f7f7f7;
+    height: 60px;
+}
+
+footer > div{
+    max-width: 1100px;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
     margin: auto;
+    padding: 20px 10px;
 }
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer ul li a{
+    color: rgba(25, 73, 122, 0.7);
+}
+footer ul li a:hover {
+    color: #00CC99;
+  }
